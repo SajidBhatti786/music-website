@@ -1,0 +1,94 @@
+/* navbar section */
+#navbar {
+  background-color: #130d0b;
+}
+.navbar__section {
+  background: linear-gradient(#130d0b, #808080) !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.nav__item__list {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  color: white !important;
+}
+.nav-item {
+  margin: 0rem 1rem !important;
+  color: white !important;
+}
+.nav-link {
+  color: white !important;
+}
+.search__bar {
+  border-radius: 5px !important;
+  color: #808080 !important;
+  width: 100% !important;
+}
+.search__bar__input {
+  background-color: #130d0b !important;
+  border: 1px solid #808080 !important;
+  border-radius: 50px !important;
+  color: #808080 !important;
+  width: 100% !important;
+  padding: 0.4rem 0.7rem !important;
+  margin: 0rem 5rem;
+  color: white !important;
+}
+.login__button {
+  background-color: #130d0b !important;
+  border: 1px solid #808080 !important;
+  border-radius: 50px !important;
+  color: #808080 !important;
+  width: auto !important;
+  padding: 0.4rem 0.7rem !important;
+  margin: 0rem 5rem;
+}
+
+/* Hero section */
+#hero-section {
+  background: linear-gradient(#130d0b, #808080) !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.hero__heading {
+  color: white !important;
+  font-family: "Abril Fatface";
+  font-size: 3rem;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 700;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: left;
+}
+.hero__subheading {
+  color: white !important;
+  font-family: "Abril Fatface";
+  font-size: 2.4rem;
+  font-style: normal;
+  font-variant: small-caps;
+  /* font-weight: 700; */
+  line-height: 1.5rem;
+}
+.hero__btn {
+  background-color: #130d0b !important;
+  border: 1px solid #808080 !important;
+  border-radius: 50px !important;
+  color: #808080 !important;
+  width: auto !important;
+  padding: 0.4rem 0.7rem !important;
+  margin: 0rem 5rem;
+}
+.hero__btn:hover {
+  background-color: #808080 !important;
+  border: 1px solid #130d0b !important;
+  border-radius: 50px !important;
+  color: #130d0b !important;
+  width: auto !important;
+  padding: 0.4rem 0.7rem !important;
+  margin: 0rem 5rem;
+}
