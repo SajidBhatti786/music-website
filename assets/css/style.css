@@ -1,6 +1,7 @@
 body {
   overflow-x: hidden;
 }
+
 /* navbar section */
 #navbar {
   background-color: #130d0b;
@@ -118,6 +119,7 @@ body {
   align-items: center !important;
   color: white !important;
   width: 100vw;
+  overflow-x: hidden;
 }
 .card-title {
   color: black !important;
