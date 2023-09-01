@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 /* navbar section */
 #navbar {
   background-color: #130d0b;
@@ -104,4 +107,162 @@
   .hero__heading {
     font-size: 2.5rem;
   }
+}
+
+/* Trending section */
+#trending,
+#trending1 {
+  background: linear-gradient(#130d0b, #808080) !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  color: white !important;
+  width: 100vw;
+}
+.card-title {
+  color: black !important;
+}
+.card-text {
+  color: black !important;
+}
+.skill-container {
+  text-align: center;
+  width: 160px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.skill-image {
+  width: 100%;
+  height: 70%; /* Reduce height for better responsiveness */
+  object-fit: cover; /* Use 'cover' to maintain aspect ratio and fill the container */
+}
+
+.skill-name {
+  height: 30%;
+  padding: 0rem 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center text horizontally */
+  justify-content: flex-end;
+}
+
+.skill-name p,
+.skill-name a {
+  font-size: 0.6rem;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  color: #130d0b;
+}
+
+.skill-name a {
+  text-decoration: underline;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 992px) {
+  .skill-container {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Allow height to adjust based on content */
+    margin: 10px;
+  }
+
+  .skill-image {
+    height: 60%; /* Adjust height for responsiveness */
+  }
+
+  .skill-name {
+    font-size: 0.5rem; /* Adjust font size */
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  .skill-name p,
+  .skill-name a {
+    font-size: 0.5rem; /* Adjust font size */
+  }
+}
+
+@media (max-width: 400px) {
+  .skill-container {
+    width: 90%; /* Adjust the width for smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+    margin: 10px;
+  }
+
+  .skill-image {
+    height: 50%; /* Adjust height for smaller screens */
+  }
+
+  .skill-name {
+    font-size: 0.4rem; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Trending Section */
+#trending1 {
+  background-color: #333; /* Set your desired background color */
+  padding: 50px 0; /* Adjust the padding as needed */
+  text-align: center;
+}
+
+#trending1 h1 {
+  color: white; /* Set the heading color */
+  font-size: 24px; /* Adjust the font size as needed */
+  margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+/* Style for each item */
+.owl-carousel .item {
+  padding: 10px; /* Adjust the item padding as needed */
+}
+
+/* Style for the skill container */
+.skill-container {
+  background-color: #fff; /* Set the background color of the skill container */
+  border: 1px solid #ccc; /* Add a border if desired */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  /* padding: 10px; Adjust the padding as needed */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+}
+
+/* Style for the skill image */
+.skill-image {
+  width: 100%; /* Make sure the image doesn't exceed the container */
+  height: auto; /* Allow the image to maintain its aspect ratio */
+}
+
+/* Style for the skill name */
+.skill-name {
+  text-align: center; /* Center align the skill name */
+}
+
+/* Style for the card title (skill name) */
+.card-title {
+  font-size: 18px; /* Set the font size of the skill name */
+  margin-bottom: 0; /* Remove margin to avoid extra spacing */
+}
+.trending__heading {
+  /* color: white !important; */
+  font-family: "holtwood one sc";
+  font-size: 2rem !important;
+  z-index: 9999999;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: bolder !important;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  /* letter-spacing: 0.2rem; */
+  /* text-align: right !important; */
 }
