@@ -57,6 +57,7 @@ body {
   justify-content: center !important;
   align-items: center !important;
 }
+
 .hero__heading {
   color: white !important;
   font-family: "Abril Fatface";
@@ -69,6 +70,7 @@ body {
   letter-spacing: 0.2rem;
   text-align: left;
 }
+
 .hero__subheading {
   color: white !important;
   font-family: "Abril Fatface";
@@ -78,6 +80,7 @@ body {
   /* font-weight: 700; */
   line-height: 1.5rem;
 }
+
 .hero__btn {
   background-color: #130d0b !important;
   border: 1px solid #808080 !important;
@@ -110,19 +113,19 @@ body {
   }
 }
 
-/* Trending section */
+/* Trending Section (used by all crousel containers)*/
 #trending,
 #trending1 {
   background: linear-gradient(#130d0b, #808080) !important;
-  display: flex !important;
+  /* display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  color: white !important;
+  color: white !important; */
   width: 100vw;
   overflow-x: hidden;
 }
 .card-title {
-  color: black !important;
+  color: white !important;
 }
 .card-text {
   color: black !important;
@@ -135,13 +138,27 @@ body {
   overflow: hidden;
   cursor: pointer;
 }
+.circular-container {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background: transparent;
+}
 
 .skill-image {
   width: 100%;
-  height: 70%; /* Reduce height for better responsiveness */
+  height: 70%;
   max-height: 70%;
-  object-fit: cover; /* Use 'cover' to maintain aspect ratio and fill the container */
+  object-fit: cover;
   overflow: hidden;
+}
+.circular-image {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .skill-name {
@@ -149,7 +166,7 @@ body {
   padding: 0rem 0.4rem;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center text horizontally */
+  align-items: center;
   justify-content: flex-end;
 }
 
@@ -178,86 +195,73 @@ body {
 
 @media (max-width: 992px) {
   .skill-container {
-    width: 100%; /* Adjust the width as needed */
-    height: auto; /* Allow height to adjust based on content */
+    width: 100%;
+    height: auto;
     margin: 10px;
   }
 
   .skill-image {
-    height: 60%; /* Adjust height for responsiveness */
+    height: 60%;
   }
 
   .skill-name {
-    font-size: 0.5rem; /* Adjust font size */
-    text-align: center; /* Center text on smaller screens */
+    font-size: 0.5rem;
+    text-align: center;
   }
 
   .skill-name p,
   .skill-name a {
-    font-size: 0.5rem; /* Adjust font size */
+    font-size: 0.5rem;
   }
 }
 
 @media (max-width: 400px) {
   .skill-container {
-    width: 90%; /* Adjust the width for smaller screens */
-    height: auto; /* Allow height to adjust based on content */
+    width: 90%;
+    height: auto;
     margin: 10px;
   }
 
   .skill-image {
-    height: 50%; /* Adjust height for smaller screens */
+    height: 50%;
   }
 
   .skill-name {
-    font-size: 0.4rem; /* Adjust font size for smaller screens */
+    font-size: 0.4rem;
   }
-}
-
-/* Trending Section */
-#trending1 {
-  background-color: #333; /* Set your desired background color */
-  padding: 50px 0; /* Adjust the padding as needed */
-  text-align: center;
-}
-
-#trending1 h1 {
-  color: white; /* Set the heading color */
-  font-size: 24px; /* Adjust the font size as needed */
-  margin-bottom: 20px; /* Adjust the margin as needed */
 }
 
 /* Style for each item */
 .owl-carousel .item {
-  padding: 10px; /* Adjust the item padding as needed */
+  padding: 10px;
 }
 
 /* Style for the skill container */
 .skill-container {
-  background-color: #fff; /* Set the background color of the skill container */
-  border: 1px solid #ccc; /* Add a border if desired */
-  border-radius: 5px; /* Add border radius for rounded corners */
-  /* padding: 10px; Adjust the padding as needed */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Style for the skill image */
 .skill-image {
-  width: 100%; /* Make sure the image doesn't exceed the container */
-  height: auto; /* Allow the image to maintain its aspect ratio */
+  width: 100%;
+  height: auto;
 }
 
-/* Style for the skill name */
 .skill-name {
-  text-align: center; /* Center align the skill name */
+  text-align: center;
 }
 
 /* Style for the card title (skill name) */
 .card-title {
-  font-size: 18px; /* Set the font size of the skill name */
-  margin-bottom: 0; /* Remove margin to avoid extra spacing */
+  font-size: 18px;
+  margin-bottom: 0;
 }
-.trending__heading {
+.trending__heading,
+.title {
   /* color: white !important; */
   font-family: "holtwood one sc";
   font-size: 2rem !important;
@@ -268,5 +272,83 @@ body {
   line-height: 1.5rem;
   text-transform: uppercase;
   /* letter-spacing: 0.2rem; */
-  /* text-align: right !important; */
+  text-align: left !important;
+  padding-left: 2rem;
+}
+.owl-next,
+.owl-prev {
+  transform: translateY(-50%);
+  color: white !important;
+  font-size: 3rem !important;
+}
+.owl-prev:hover,
+.owl-next:hover {
+  /* color: #130d0b !important; */
+  background: transparent !important;
+}
+
+/* promo section */
+#subscription-section {
+  background: linear-gradient(#130d0b, #808080) !important;
+  font-family: "Irish Grover";
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.subscription__heading {
+  color: white !important;
+  font-family: "Irish Grover";
+  font-size: 3rem;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 700;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: left;
+}
+.subscription__subheading {
+  color: white !important;
+  font-family: "Inria Serif";
+  font-size: 2rem;
+  font-style: normal;
+  font-variant: small-caps;
+  /* font-weight: 700; */
+  line-height: 1.5rem;
+}
+.input-with-button {
+  display: flex;
+  align-items: center;
+}
+
+.input-with-button input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+/* Style for the button */
+.input-with-button button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-left: none;
+  background-color: #f0f0f0;
+  border-radius: 0 0.5rem 0.5rem 0;
+  /cursor: pointer;
+  outline: none;
+}
+
+/* Hover styles for the button */
+.input-with-button button:hover {
+  background-color: #ddd;
+}
+
+/* Footer section */
+#footer {
+  background: linear-gradient(#130d0b, #808080) !important;
+}
+.web__name {
+  font-family: "Irish Grover";
 }
